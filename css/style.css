@@ -41,7 +41,8 @@ h2{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-primary);
-    }
+}
+
 .container{
     width: 1200px;
     margin-left: auto;
@@ -49,7 +50,7 @@ h2{
     padding-left: 15px;
     padding-right: 15px;
         
-    }
+}
 
 /*Стилизирование хедера*/
 
@@ -75,25 +76,29 @@ h2{
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;  
-    }
+}
 
 .nav__links{
     display: flex;
     margin: 0;
     margin-right: 331px;
 }
+
 .nav{
     background: #FFFFFF;
     display: flex;
     align-items: center;
     
 }
+
 .web-style{
     color: var(--theme-colour);
 }
+
 .studio-style{
     color: #000000;
 }
+
 .nav__items:not(:last-child){
     margin-right: 50px;
 }
@@ -101,7 +106,7 @@ h2{
 .nav__link:hover,
 .nav__link:focus{
     color: var(--theme-colour);
-    }
+}
 
 .nav__link{
     font-family: var(--primary-font);
@@ -113,10 +118,10 @@ h2{
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .active-page{
     color: var(--theme-colour);
 }
+
 .active-page::after {
     content: "";
     display: block;
@@ -135,7 +140,7 @@ h2{
 }
 
 .link-box__card-icon{
-    fill: #757575;
+    fill: var(--text-secondary);
     margin-right: 10px;
 }
 
@@ -156,10 +161,12 @@ h2{
 .link-box__mail:focus .link-box__card-icon{
     fill: var(--theme-colour);
 }
+
 .link-box__phone:hover .link-box__card-icon,
 .link-box__phone:focus .link-box__card-icon{
     fill: var(--theme-colour);
 }
+
 .link-box__mail:hover,
 .link-box__mail:focus,
 .link-box__phone:hover,
@@ -167,10 +174,11 @@ h2{
     color: var(--theme-colour);
 }
 
-
 .link-box__mail{
     margin-right: 50px;
 }
+
+/* Секция ГЕРОЙ */
 
 .hero-box{
     height: 600px;
@@ -191,7 +199,7 @@ h2{
     width: 696px;
     padding-top: 200px;
     margin-bottom: 30px;
-    }
+}
 
 .hero-box__button{
     width: 200px;
@@ -207,7 +215,7 @@ h2{
     margin: auto;
     display: block;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+}
 
 .hero-box__button:hover{
     color: #188CE8;
@@ -220,6 +228,7 @@ h2{
     opacity: 0;
     pointer-events: none;
 }
+
 .backdrop{
     position: absolute;
     width: 100%;
@@ -246,6 +255,7 @@ h2{
     border-radius: 4px; 
     padding: 40px;
 }
+
 .modal__close-button{
     position: absolute;
     width: 30px;
@@ -294,28 +304,34 @@ h2{
 }
 
 .form__field{
-    color: #757575;
+    color: var(--text-secondary);
     font-size: 12px;
     position: relative;
 }
+
 .form__input:focus{
     border: 1px solid var(--theme-colour);
     outline: none;
 }
+
 .form__input:hover{
     border: 1px solid var(--theme-colour);
     outline: none;
 }
+
 .form__input:focus + svg{
     fill: var(--theme-colour);
 }
+
 .form__input:hover + svg{
     fill: var(--theme-colour);
 }
+
 .form__messege:focus{
     border: 1px solid var(--theme-colour);
     outline: none;
 }
+
 .form__messege:hover{
     border: 1px solid var(--theme-colour);
     outline: none;
@@ -332,6 +348,7 @@ h2{
     margin-top: 4px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form__messege{
     resize: none;
     width: 448px;
@@ -344,6 +361,7 @@ h2{
     margin-top: 4px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form__messege::placeholder{
     color: rgba(117, 117, 117, 0,5);
 }
@@ -355,6 +373,7 @@ h2{
     margin-left: 14px;
     margin-top: -35px;
 }
+
 .policy-box{
     font-size: 14px;
     color: var(--text-secondary);
@@ -363,14 +382,16 @@ h2{
     align-items: center;
     justify-content: center;
 }
+
 .policy-box::before{
     content:"" ;
     width: 16px;
     height: 15px;
-    border: 2px solid #212121;
+    border: 2px solid var(--text-primary);
     border-radius: 4px;
     margin-right: 7px;
 }
+
 .policy-checkbox{
     position: absolute;
     width: 1px;
@@ -381,6 +402,7 @@ h2{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .policy-checkbox:checked + .policy-box::before{
     background-color: var(--theme-colour);
     background-image: url(../img/policy.svg);
@@ -393,10 +415,12 @@ h2{
     outline: 2px solid var(--theme-colour);
     border: none;
 }
+
 .policy-box a{
     color: var(--theme-colour);
     text-decoration: underline;
 }
+
 .submit-button{
     width: 200px;
     height: 50px;
@@ -417,9 +441,11 @@ h2{
     letter-spacing: 0.06em;
     cursor: pointer;
 }
+
 .submit-button:hover{
     background-color: #188CE8;
 }
+
 .submit-button:focus{
     background-color: #188CE8;
 }
@@ -442,8 +468,6 @@ h2{
     justify-content: space-between;
 }
 
-
-
 .work-tools__icon{
     display: flex;
     align-items: center;
@@ -455,7 +479,6 @@ h2{
     margin-bottom: 30px
 }
 
-
 .work-tools__name{
     font-weight: bold;
     font-size: 14px;
@@ -464,7 +487,7 @@ h2{
     text-transform: uppercase;
     color: var(--text-primary);
     margin-bottom: 10px;
-    }
+}
 
 .work-tools__text{
     font-weight: normal;
@@ -472,7 +495,7 @@ h2{
     line-height: 1.7;
     letter-spacing: 0.03em;
     color:  var(--text-secondary);
-    }
+}
 
 /* Чем занимаемся */
 
@@ -486,19 +509,21 @@ h2{
     display: flex;
     margin-top: 50px;
 }
+
 .specification__list{
     width: 1200px;
     display: flex;
     justify-content: space-between;
     margin: 0px;
 }
+
 .specification__item{
     display: flex;
     display: inline-block;
 }
 
 .specification__text{
-    font-family: Roboto;
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -513,7 +538,6 @@ h2{
     background: rgba(47, 48, 58, 0.8);
     position: absolute;
     top: 1401px;
-
 }
 
 /* Стилизироваие блока структуры команды */
@@ -523,6 +547,7 @@ h2{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .team__name{
     margin-bottom: 50px;   
 }
@@ -548,7 +573,7 @@ h2{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    }
+}
 
 .team__card{
     margin-bottom: 30px;
@@ -564,6 +589,7 @@ h2{
     display: flex;
     justify-content: center;
 }
+
 .team__social-links{
     display: flex;
     justify-content: space-between;
@@ -571,6 +597,7 @@ h2{
     margin-right: 32px;
     margin-top: 16px;
 }
+
 .team__social-link{
     display: flex;  
     
@@ -580,9 +607,11 @@ h2{
 .link-icon:focus .social-icon {
     fill: #FFFFFF;
 }
+
 .link-icon:hover, .link-icon:focus {
     background-color: var(--theme-colour);
 }
+
 .link-icon{
     display: inline-flex;
     align-items: center;
@@ -599,22 +628,22 @@ h2{
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 /* Постоянные клиенты */
     
 .regular-customers{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .regular-customers__name{
-    font-family: Roboto;
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--text-primary);
 }
 
 .regular-customers__box{
@@ -640,6 +669,7 @@ h2{
     border-radius: 4px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .regular-customers__link:focus,
 .regular-customers__link:hover{
     border-color: var(--theme-colour);
@@ -653,7 +683,6 @@ h2{
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-    
 }
 
 .column{
@@ -666,7 +695,7 @@ h2{
 
 .footer__logo{
     display: inline-block;
-    font-family: Raleway, sans-serif;
+    font-family: var(--secondary-font), sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -707,9 +736,11 @@ h2{
 .location{
     color: #FFFFFF;
 }
+
 .in-footer{
     margin-left: 0px;
 }
+
 .in-foot{
     fill: #FFFFFF;
 }
@@ -762,6 +793,7 @@ h2{
     line-height: 16px;
     letter-spacing: 0.03em;  
 }
+
 .footer__input{
     width: 358px;
     height: 50px;
@@ -804,7 +836,9 @@ h2{
 }
 
 
-/* Стилизирование кнопок портфолио */
+/* Стилизирование портфолио */
+
+    /* Стилизирование кнопок */
 
 .portfolio-box{
     padding-bottom: 89px;
@@ -835,12 +869,15 @@ h2{
     border: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .buttons__item:hover,
 .buttons__item:focus {
     background-color: var(--theme-colour);
     color: #FFFFFF;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+/* Карточки портфолио */
 
 .project{
     display: flex;
@@ -866,10 +903,12 @@ h2{
 .description{
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .description__box{
     position: relative;
     overflow: hidden;
 }
+
 .description__text{
     width: 100%;
     height: 100%;
@@ -877,7 +916,7 @@ h2{
     position: absolute;
     left: 0;
     top: 0;
-    font-family: Roboto;
+    font-family: var(--primary-font);
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -888,10 +927,12 @@ h2{
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .description:hover .description__text {
     transform: translateY(0);
     opacity: 1;
 }
+
 .description:focus .description__text {
     transform: translateY(0);
     opacity: 1;
