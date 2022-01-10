@@ -59,15 +59,6 @@
     
 }
 
-.link-icon:hover .social-icon,
-.link-icon:focus .social-icon {
-    fill: #FFFFFF;
-}
-
-.link-icon:hover, .link-icon:focus {
-    background-color: var(--theme-colour);
-}
-
 .link-icon{
     display: inline-flex;
     align-items: center;
@@ -77,6 +68,14 @@
     border-radius: 50%;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #AFB1B8;
+    &:hover,
+    &:focus {
+        background-color: var(--theme-colour);
+    }
+    &:hover .social-icon,
+    &:focus .social-icon {
+        fill: #FFFFFF;
+        }
 }
 
 .social-icon{

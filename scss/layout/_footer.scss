@@ -25,7 +25,11 @@
 
 .footer__box{
     margin-bottom: 9px;
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
+
 
 .footer__link{
     display: flex;
@@ -70,9 +74,6 @@
 }
 
 
-.footer__box:last-child {
-    margin-bottom: 0;
-}
 
 .footer__logo{
     font-weight: bold;
